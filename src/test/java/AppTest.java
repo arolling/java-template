@@ -14,6 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class AppTest extends FluentTest {
   public WebDriver webDriver = new HtmlUnitDriver();
+
   @Override
   public WebDriver getDefaultDriver() {
       return webDriver;
@@ -21,6 +22,9 @@ public class AppTest extends FluentTest {
 
   @ClassRule
   public static ServerRule server = new ServerRule();
+
+  // @Rule
+  // public ClearRule clearRule = new ClearRule();
 
   //Integration testing
   // @Test
